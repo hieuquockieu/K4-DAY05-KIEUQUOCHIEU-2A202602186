@@ -29,3 +29,10 @@ Tên lớp phải giống từng chữ trong `classes.json` của task. `traffic
 
 Khi không chắc, ghi ảnh/vị trí, dấu hiệu nhìn thấy, quy tắc đã dùng và điều cần hỏi trong `REPORT.md`. Không ép đoán cho đủ coverage.
 
+## Đối chiếu export hiện tại
+
+- Export semantic hiện có gồm 3 ảnh, `labelmap.txt` dùng đúng 5 lớp `easy_semantic`: `road`, `sidewalk`, `building`, `vegetation`, `sky`.
+- Export `medium` gồm 3 ảnh và file COCO `instances_default.json`; export `hard` gồm 2 ảnh và file COCO tương ứng. Hai thư mục này chưa phải ZIP đúng tên task.
+- Chưa có bằng chứng export cho sáu checkpoint (`cp1_holes`, `cp2_slice`, `cp5_occlusion`, `cp3_thin`, `cp4_curb`, `cp6_coverage`).
+- File export chỉ mô tả mask cuối cùng, không lưu thứ tự vẽ, việc dùng gợi ý, lỗi trước khi sửa hoặc lịch sử Save/export. Các chi tiết đó phải được ghi lại trung thực trong `REPORT.md`, không suy ra từ annotation.
+
